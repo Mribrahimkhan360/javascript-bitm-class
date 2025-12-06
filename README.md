@@ -1,3 +1,5 @@
+
+<h2>Day 2</h2>
 ```js
 const pageId = Number(String(Date.now()).slice(-7)) + Math.floor(Math.random() * 1000);
 ```
