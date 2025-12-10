@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API</title>
+</head>
+<body>
+    <script src="script.js"></script>
+</body>
+<script>
+	  const responseVisLog = await fetch(`${baseURL}apivisitorlog-get`);
+      const dataVisLog = await responseVisLog.json();
+      for(let i=0; idataVisLog.data.length; i++){
+        const log = dataVisLog.data[i];
+        
+        if(log.started_at !== null){
+          console.log(started_at  ,log.started_at);
+        }
+        if(log.ended_at !== null)
+        {
+          console.log(ended_at  ,log.ended_at);
+        }
+        
+      }
+</script>
+</html>      
+	  
